@@ -15,9 +15,9 @@ export default async function RootLayout({children}) {
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body className='font-mono flex flex-col'>
-        <header className='flex items-center justify-between w-screen py-4 px-10 border-b-2 border-b-gray-400'>
+        <header className='flex items-center justify-center md:justify-between w-screen py-4 px-10 border-b-2 border-b-gray-400'>
           <h1 className='font-bold text-xl'><Link href="/">Playing with Next13</Link></h1>
-          <nav className='flex space-x-4'>
+          <nav className='hidden md:flex space-x-4'>
             {categories.map(category => <NavItem key={category} category={category}>{category}</NavItem>)}
           </nav>
         </header>
