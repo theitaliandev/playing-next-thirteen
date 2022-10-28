@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import './globals.css'
-import getCategories from './lib/getCategories'
+import getCategories from '../lib/getCategories'
 import NavItem from './NavItem'
 
 export default async function RootLayout({children}) {
